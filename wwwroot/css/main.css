@@ -1,4 +1,9 @@
-@charset "utf-8";
+:root {
+	--varborderstyle: none;
+	--varbordercolor: none;
+	            --varBorderStyle: dotted;
+            --varBorderColor: black;
+}
 
 
 /*Navigation*/
@@ -104,11 +109,11 @@
   transform: translate(-50%, -50%);
 }
 
-.one-night{
-	color:#28446c;
+.one-night {
+	color: #28446c;
 	font-size: 24px;
 	font-weight: 200;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
 	
 .because{
@@ -136,19 +141,6 @@
      text-shadow:none;
 }
 
-.the-hope {
-	color: darkgrey;
-	font-size: 30px;
-}
 
-.the-dream {
-	color:black;
-	font-size: 40px;
-	font-weight: 800;
-}
 
-.hope-text {
-	color:black;
-	font-size: 18px;
-}
 

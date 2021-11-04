@@ -1772,7 +1772,7 @@
       var relatedTarget = {
         relatedTarget: this._element
       };
-      var hideEvent = $.Event(Event$4.HIDE, relatedTarget);
+      var vent = $.Event(Event$4.HIDE, relatedTarget);
 
       var parent = Dropdown._getParentFromElement(this._element);
 

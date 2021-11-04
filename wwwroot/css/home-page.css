@@ -1,3 +1,179 @@
 @charset "utf-8";
 
- /*NOTHING HERE YET!!!!!!*/
+
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    background-color: #28446c;
+}
+
+.header-column {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    letter-spacing: .2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+}
+
+.header-row-right-just {
+    display: flex;
+    flex-direction: row;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    justify-content: flex-end;
+    justify-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-text {
+    color: white;
+}
+
+
+
+.making-a-difference {
+    font-family: 'Superscratchy';
+    font-style: normal;
+    }
+
+.the-hope {
+    color: darkgrey;
+    font-size: 30px;
+}
+
+.the-dream {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hope-text {
+    color: black;
+    font-size: 18px;
+}
+
+
+.row-dream {
+    display: flex;
+    flex-direction: row;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-dream {
+    display: flex;
+    flex-direction: column;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    padding: 10px;
+}
+
+.col-back-image-rocket {
+    background-image: url("../wwwroot/images/HTD_RocketShip.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: column;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    width: 450px;
+}
+
+.hope-text {
+    font-size: small
+}
+
+
+.footer-why-sleep-matters {
+    line-height: 70%;
+    font-size: small;
+}
+
+.footer-captions {
+    letter-spacing: .1em;
+}
+
+.footer-captions-small {
+    letter-spacing: .02em;
+    font-size: smaller;
+}
+
+.footer-container {
+    background-color: #28446c;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+}
+
+
+.sleep-row {
+    display: flex;
+    flex-direction: row;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    background-color: lightgrey;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sleep-container-column {
+    display: flex;
+    flex-direction: column;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+}
+
+.sleep-column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    text-align: center;
+}
+
+
+
+
+
+
+.test-row {
+    display: flex;
+    flex-direction: row;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain; /* Resize the background image to cover the entire container */
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+    justify-content: center;
+}
+
+.test-col {
+    display: flex;
+    flex-direction: column;
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+}
+
+
+
+
+
+
+
+
