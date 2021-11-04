@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Hope To Dream</title>
+
+    <!-- Bootstrap -->
+    <link href="../wwwroot/css/main.css" rel="stylesheet">
+    <link href="../wwwroot/css/bootstrap/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <style>
+
+        .header-row {
+            display: flex;
+            flex-direction: row;
+            /*border-style: dotted;
+            background-color: red;*/
+            background-color: #28446c;
+        }
+
+        .header-column {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: center;
+            letter-spacing: .2em;
+            padding-left: 10px;
+            padding-right: 10px;
+            /*BORDER*/
+            /*            border-style: solid;
+            border-color: blue;*/
+        }
+
+        .header-row-right-just {
+            display: flex;
+            flex-direction: row;
+            /*border-color:deeppink;
+            border-style:double;*/
+            justify-content: flex-end;
+            justify-items: center;
+            width: 100%;
+            padding: 0;
+        }
+
+        .menu-text {
+            color: white;
+        }
+
+        .row-dream {
+            display: flex;
+            flex-direction: row;
+            /*border-style: dotted;
+            border-color:red;*/
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-dream {
+            display: flex;
+            flex-direction: column;
+            /*border-style: dashed;*/
+            padding: 10px;
+        }
+
+        .col-back-image-rocket {
+            background-image: url("images/rocket.gif");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            display: flex;
+            flex-direction: column;
+            /*border-style:dotted;
+            border-color:orangered;*/
+        }
+
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #28446c;
+            color: white;
+            font-size: 16px;
+            border-style: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            /*background-color: #3e8e41;*/
+        }
+
+
+
+        .parent-block {
+            align-content: center;
+            margin: 50px;
+        }
+
+
+        .main-image {
+            position: relative;
+            margin-bottom: 0;
+            border: 0;
+            border-color: transparent;
+        }
+
+        .column-container {
+            background-color: lightgrey;
+            text-align: center;
+        }
+
+        .footer-container {
+            background-color: #28446c;
+            text-align: left;
+            color: white;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+
+        .sleep-row {
+            display: flex;
+            flex-direction: row;
+            border-style: dashed;
+            background-color: lightgrey;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .sleep-container-column {
+            display: flex;
+            flex-direction: column;
+            border-style: dotted;
+            border-color: green;
+        }
+
+        .sleep-column {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-style: dotted;
+            border-color: red;
+            text-align: center;
+        }
+
+
+
+        .footer-why-sleep-matters {
+            line-height: 70%;
+        }
+
+
+        /* MEDIA QUERIES::::: typical phone screen resolution */
+        @media only screen and (max-width : 667px) {
+            .HideMe {
+                display: none;
+                //can add actions on other classes here too
+            }
+
+            .top-left {
+                font-size: 24px;
+                top: 0px;
+            }
+
+            .learn-more-button {
+                font-size: 12px;
+                background: #ef5fa5;
+                color: white;
+                border-style: none;
+                height: 35px;
+                width: 100px;
+                font: bold15px arial,sans-serif;
+                text-shadow: none;
+            }
+        }
+        /* landscape orientation */
+        @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        }
+        /* portrait orientation */
+        @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        }
+    </style>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDYTYTK1XL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SDYTYTK1XL');
+    </script>
+
+</head>
+
+
+<body>
+
+    <!--BEGIN NAV SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-row" style="padding: 0">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="header-column">
+            <img src="images/old images/AHTD Logo.jpg" style="width:200px" />
+        </div>
+        <div class="header-row-right-just">
+            <!--GUTS OF THE THING START-->
+            <div class="collapse navbar-collapse" " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="text-align:center">
+                    <li class="nav-item active header-column"> <a class="nav-link" href="#">WHO WE ARE</a> </li>
+                    <li class="nav-item active header-column"> <a class="nav-link" href="#">GET INVOLVED</a> </li>
+                    <li class="dropdown header-column" ">
+                        <button class="dropbtn" style="padding-top: 20px; letter-spacing: .2em;">MEDIA</button>
+                        <div class="dropdown-content ">
+                            <a href="#">Link 1</a>
+                        </div>
+                    </li>
+                    <li class="dropdown header-column" style="padding-top:20px">
+                        <button class="dropbtn" style="letter-spacing: .2em;">LINKS</button>
+                        <div class="dropdown-content">
+                            <a href="experiment.html">Experiments</a>
+                            <a href="ReferencePage.html">References</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item active header-column" ">
+                        <a class="nav-link " href="#">
+                            <input class="learn-more-button" type="button" value="DONATE">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--GUTS OF THE THING END-->
+        </div> <!--END ROW-->
+    </nav><!--END NAV SECTION-->
+    <!--MAKING A DIFFERENCE SECTION-->
+    
+        <div class="container">
+        <img class="img-fluid main-image" src="../wwwroot/images/HTD_Website_Home-1_DK.jpg"/>
+        <div class="top-left" style="top:50px;">
+            MAKING A DIFFERENCE
+            <p class="one-night">ONE NIGHT'S SLEEP AT A TIME</p>
+            <p class="because HideMe" style="width:50%;">Because of people like you, we're able to provide children with beds of their own so they can sleep better and grow up healthier</p>
+            <form>
+                <button class="learn-more-button">LEARN MORE</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+
+
+    <!--the DREAM section-->
+    <div class="row-dream">
+
+        <div class="col-dream">
+            <img src="../wwwroot/images/HTD_Website_Home-2_MB.jpg" class="img-fluid" style="min-width:400px;max-width:500px; background-position:right">
+        </div>
+        <div class="col-back-image-rocket">
+            <div class="the-hope">
+                THE HOPE
+                <div class="the-dream" style="">the dream</div>
+                <div class="hope-text" style="width:450px">Hope To Dream believes that every child should have a good night's sleep and a bed to call their own. For over ten years, Ashley HomeStores has donated a portion of the mattress sales to Hope To Dream to provide children with twin mattress, bedframe, bedding and pillow. Our efforts have helped over 110,000 kids improve their sleeping conditions, leading to a higher quality of life.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--bottom grey section here-->
+    <div><h2 style="text-align: center">why sleep matters</h2></div>
+    <div class="sleep-row">
+        <div class="sleep-container-column">
+            <div class="sleep-column">
+                <img src="images/ZZZ.gif">
+            </div>
+            <div class="sleep-column">
+                <p>BENEFITS OF QUALITY SLEEP</p>
+                <p class="footer-why-sleep-matters">Increases attention span</p>
+                <p class="footer-why-sleep-matters">Improves academic performance</p>
+                <p class="footer-why-sleep-matters">Enhances Creativity</p>
+                <p class="footer-why-sleep-matters">Boosts immune system</p>
+            </div>
+        </div>
+
+        <div class="sleep-container-column">
+            <div class="sleep-column">
+                <img src="images/eyes.gif">
+            </div>
+            <div class="sleep-column">
+                <p>PITFALLS OF POOR SLEEP</p>
+                <p class="footer-why-sleep-matters">Emotional turmoil and anxiety</p>
+                <p class="footer-why-sleep-matters">Behavioral problems</p>
+                <p class="footer-why-sleep-matters">Difficulty concentrating</p>
+                <p class="footer-why-sleep-matters">Developmental problems</p>
+            </div>
+        </div>
+        <div class="sleep-container-column">
+            <div class="sleep-column">
+                <div class="sleep-column">
+                    <img src="images/clock.gif">
+                </div>
+                <p class="footer-why-sleep-matters">Aes 3-5: 10-13 hours</p>
+                <p class="footer-why-sleep-matters">Ages 6-13: 9-11 hours</p>
+                <p class="footer-why-sleep-matters">Ages 14-17: 8-10 hours</p>
+            </div>
+        </div>
+        <div class="sleep-container-column">
+            <div class="sleep-column">
+                <div class="sleep-column">
+                    <img src="images/bed.gif">
+                </div>
+                THE RIGHT CONDITIONS
+                <p class="footer-why-sleep-matters">Exercise and good nutrition</p>
+                <p class="footer-why-sleep-matters">Dark, quiet room</p>
+                <p class="footer-why-sleep-matters">Appropriate bed linens</p>
+                <p class="footer-why-sleep-matters">Clean, comfortable mattress</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bottom menus here -->
+    <div class="row footer-container ">
+        <div class="footer-captions"><br></div>
+        <div class="col-sm-1">
+            <div class="footer-captions">HOME</div>
+        </div>
+        <div class="col-sm-3">
+            <div class="footer-captions">WHO WE ARE</div>
+            <div class="footer-captions">ABOUT H2D</div>
+            <div class="footer-captions">PARTICIPATING HOMESTORES</div>
+            <div class="footer-captions">FAQ</div>
+            <div class="footer-captions">CONTACT US</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="footer-captions">GET INVOLVED</div>
+            <div class="footer-captions">NOMINATE A CHILD</div>
+            <div class="footer-captions">DONATE</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="footer-captions">MEDIA</div>
+            <div class="footer-captions">GALLERY</div>
+            <div class="footer-captions">NEWS</div>
+            <div class="footer-captions">SOCIAL MEDIA</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="footer-captions">SUPPORT LINKS</div>
+            <div class="footer-captions">TRADUCIR AL ESPANOL</div>
+            <div class="footer-captions">TRANSLATE TO ENGLISH</div>
+        </div>
+        <div class="col-sm-1">
+            <div class="footer-captions"><img src="images/social.gif" width="138" height="60" alt="" /></div>
+        </div>
+        <div class="col-sm-1">
+            <div class="footer-captions">(donate button)</div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!--edge fonts-->
+    <script src="http://use.edgefonts.net/cabin-sketch.js"></script>
+
+    <br>
+    <img src="../html/images/old images/background.gif" />
+    <hr>
+    <div><a href="ReferencePage.html">reference page</a></div>
+    <div><a href="experiment.html">experiments</a></div>
+    <div><a href="MenuSample.html">MenuSample</a></div>
+    <div> <a href="first-page-middle.html">First Page Middle Section</a></div>
+</body>
+</html>
