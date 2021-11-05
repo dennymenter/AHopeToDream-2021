@@ -129,6 +129,13 @@
     background-color: lightgrey;
     justify-content: center;
     flex-wrap: wrap;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    background-size: contain; /* Resize the background image to cover the entire container */
+    border-style: var(--varBorderStyle);
+    border-color: var(--varBorderColor);
+
 }
 
 .sleep-container-column {
@@ -141,7 +148,7 @@
 .sleep-column {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 25px;
     border-style: var(--varBorderStyle);
     border-color: var(--varBorderColor);
     text-align: center;

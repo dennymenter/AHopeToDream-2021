@@ -1,8 +1,6 @@
 :root {
-	--varborderstyle: none;
-	--varbordercolor: none;
-	            --varBorderStyle: dotted;
-            --varBorderColor: black;
+	--varborderstyle: dotted;
+	--varbordercolor: black;
 }
 
 
@@ -134,7 +132,6 @@
 	font-size: 18px;
      background:#ef5fa5;
      color:white;
-     border-style:none;
      height:50px;
      width:150px;
      font:bold15px arial,sans-serif;
