@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Who We Are</title>
+
+    <link href="../wwwroot/css/main.css" rel="stylesheet">
+    <link href="../wwwroot/css/bootstrap/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link href="../wwwroot/css/Scratchystylesheet.css" rel="stylesheet">
+    <link href="../wwwroot/css/who-page.css" rel="stylesheet">
+    <link href="../wwwroot/css/home-page.css">
+
+    <style>
+
+        /*Navigation -------------*/
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .parent-block {
+            align-content: center;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <!--NAV HEADER-->
+    <!--BEGIN NAV SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-row" style="padding: 0">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="header-column">
+            <img src="../wwwroot/images/AHTD Logo.jpg" style="width:200px" />
+        </div>
+        <div class="header-column" style="width:200px;">
+            <p style="font-size:14px;">FOUNDED BY</p>
+            <img src="../wwwroot/images/AHS_Logo_Horizontal_OrgHome_WhiteType.png" />
+            <br />
+        </div>
+        <div class="header-row-right-just">
+            <!--GUTS OF THE THING START-->
+            <div class="collapse navbar-collapse" " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="text-align:center">
+                    <li class="nav-item active header-column"> <a class="nav-link" href="#">WHO WE ARE</a> </li>
+                    <li class="nav-item active header-column"> <a class="nav-link" href="#">GET INVOLVED</a> </li>
+                    <li class="dropdown header-column" ">
+                        <button class="dropbtn" style="padding-top: 20px; letter-spacing: .2em;">MEDIA</button>
+                        <div class="dropdown-content ">
+                            <a href="#">Link 1</a>
+                        </div>
+                    </li>
+                    <li class="dropdown header-column" style="padding-top:20px">
+                        <button class="dropbtn" style="letter-spacing: .2em;">LINKS</button>
+                        <div class="dropdown-content">
+                            <a href="experiment.html">Experiments</a>
+                            <a href="ReferencePage.html">References</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item active header-column" ">
+                        <a class="nav-link " href="#">
+                            <form id='formDonate' name='form-Donate' onsubmit='redirect();return false;'>
+                                <div class="style7">
+                                    <input type="image" name="submit" src="../wwwroot/images/HTD_Donate_CTA.png" border="0" alt="Submit" style="width:150px;" />
+                                </div>
+                            </form>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--GUTS OF THE THING END-->
+        </div> <!--END ROW-->
+    </nav><!--END NAV SECTION-->
+    <!--MAKING A DIFFERENCE SECTION-->
+    <div class="container">
+        <img class="img-fluid main-image" src="../wwwroot/images/HTD_Website_Home-1_DK.jpg" />
+        <div class="top-left" style="top:50px;">
+            <p class="making-a-difference">MAKING A DIFFERENCE</p>
+            <p class="one-night">ONE NIGHT'S SLEEP AT A TIME</p>
+            <p class="because" style="width:50%;">Because of people like you, we're able to provide children with beds of their own so they can sleep better and grow up healthier</p>
+            <form>
+                <form id='formDonate' name='form-Donate' onsubmit='redirect();return false;'>
+                    <div class="style7">
+                        <input type="image" name="submit" src="../wwwroot/images/HTD_LearnMore_CTA.png" border="0" alt="Submit" style="width:150px;" />
+                    </div>
+                </form>
+            </form>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="header-container">WHO WE ARE</div>
+
+</body>
+
+</html>

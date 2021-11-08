@@ -26,9 +26,13 @@
     <None Include="bundleconfig.json" />
     <None Include="wwwroot\images\AHS_Logo_Horizontal_OrgHome_WhiteType.png" />
     <None Include="wwwroot\images\AHTD Logo.jpg" />
+    <None Include="wwwroot\images\HTD_Donate_CTA.png" />
+    <None Include="wwwroot\images\HTD_LearnMore_CTA.png" />
+    <None Include="wwwroot\images\HTD_Submit_CTA.png" />
     <None Include="wwwroot\images\HTD_Website_Home-1_DK.jpg" />
     <None Include="wwwroot\images\HTD_Website_Home-1_MB.jpg" />
     <None Include="wwwroot\images\HTD_Website_Home-2_MB.jpg" />
+    <None Include="wwwroot\images\social.gif" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,11 @@
+﻿.header-container {
+    background-image:url("../images/HTD__WhoWeAre_header.jpg");
+    border-style: dotted;
+    text-align: center;
+    padding-top: 100px;
+    height:600px;
+    background-repeat:no-repeat;
+    width: 100%;
+    align-items:center;
+    color:white;
+}

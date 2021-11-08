@@ -1,13 +1,11 @@
 @charset "utf-8";
 
-
-
 .header-row {
     display: flex;
     flex-direction: row;
     border-style: var(--varBorderStyle);
     border-color: var(--varBorderColor);
-    background-color: #28446c;
+    background-color: var(--siteBlue);
 }
 
 .header-column {
@@ -95,6 +93,7 @@
 }
 
 
+/*FOOTER*/
 .footer-why-sleep-matters {
     line-height: 70%;
     font-size: small;
@@ -105,37 +104,37 @@
 }
 
 .footer-captions-small {
-    letter-spacing: .02em;
-    font-size: smaller;
+    letter-spacing: .08em;
+    font-size: xx-small;
+    line-height: 250%;
 }
 
-.footer-container {
-    background-color: #28446c;
-    text-align: left;
-    color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--siteBlue);
+    justify-content: center;
 }
+
+ .footer-column{
+     display:flex;
+     flex-direction:column;
+     color:white;
+     padding:20px;
+ }
 
 
 .sleep-row {
     display: flex;
     flex-direction: row;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
     background-color: lightgrey;
     justify-content: center;
     flex-wrap: wrap;
     background-position: top left;
     background-repeat: no-repeat;
-
     background-size: contain; /* Resize the background image to cover the entire container */
     border-style: var(--varBorderStyle);
     border-color: var(--varBorderColor);
-
 }
 
 .sleep-container-column {
@@ -165,22 +164,13 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: contain; /* Resize the background image to cover the entire container */
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: dotted;
     justify-content: center;
+    background-color: var(--siteBlue);
 }
 
 .test-col {
     display: flex;
     flex-direction: column;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: dotted;
 }
-
-
-
-
-
-
-
-
