@@ -45,3 +45,16 @@
     width:200px;
 }
 
+.faq-extension-header{
+    background-color:white;
+    color:black;
+    font-size:medium;
+    line-height:1;
+}
+
+.faq-extension-body {
+    background-color: white;
+    color: black;
+    font-size: small;
+    padding-left:40px;
+}

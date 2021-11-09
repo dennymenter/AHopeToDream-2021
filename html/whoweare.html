@@ -49,59 +49,43 @@
 
 </head>
 
-
-
 <body>
 
 
     <!--BEGIN NAV SECTION-->
     <!--NAV HEADER-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header-row" style="padding: 0;">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="header-column">
-            <a href="../html/index.html"><img src="../wwwroot/images/AHTD Logo.jpg" /></a>
+    <!-- got this from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: var(--siteBlue); padding:0;">
+        <a class="navbar-brand" style="padding:0;" href="index.html"><img src="../wwwroot/images/AHTD Logo.jpg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-menu-extend" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <img src="../wwwroot/images/AHS_Logo_Horizontal_OrgHome_WhiteType.png" />
+                </li>
+                <li class="nav-item nav-menu-extend">
+                    <a class="nav-link " style="color:white;width:100px;" href="#"></a>
+                </li>
+                <li class="nav-item nav-menu-extend">
+                    <a class="nav-link " style="color:white" href="../html/whoweare.html">WHO WE ARE</a>
+                </li>
+                <li class="nav-item nav-menu-extend">
+                    <a class="nav-link " style="color:white" href="#">GET INVOLVED</a>
+                </li>
+                <li class="nav-item nav-menu-extend">
+                    <a class="nav-link " style="color:white" href="#">MEDIA</a>
+                </li>
+                <li class="nav-item nav-menu-extend">
+                    <a class="nav-link " style="color:white" href="#">
+                        <!--image as a submit button-->
+                        <input type="image" src="../wwwroot/images/HTD_Donate_CTA.png" alt="Submit">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="header-column" style="width:200px;">
-            <p style="font-size:14px;">FOUNDED BY</p>
-            <img src="../wwwroot/images/AHS_Logo_Horizontal_OrgHome_WhiteType.png" />
-            <br />
-        </div>
-        <div class="header-row-right-just">
-            <!--GUTS OF THE THING START-->
-            <div class="collapse navbar-collapse" " id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto" style="text-align:center">
-                    <li class="nav-item active header-column"> <a class="nav-link" href="whoweare.html">WHO WE ARE</a> </li>
-                    <li class="nav-item active header-column"> <a class="nav-link" href="#">GET INVOLVED</a> </li>
-                    <li class="dropdown header-column" ">
-                        <button class="dropbtn" style="padding-top: 20px; letter-spacing: .2em;">MEDIA</button>
-                        <div class="dropdown-content ">
-                            <a href="#">Link 1</a>
-                        </div>
-                    </li>
-                    <li class="dropdown header-column" style="padding-top:20px">
-                        <button class="dropbtn" style="letter-spacing: .2em;">LINKS</button>
-                        <div class="dropdown-content">
-                            <a href="experiment.html">Experiments</a>
-                            <a href="ReferencePage.html">References</a>
-                        </div>
-
-                    </li>
-
-                    <li class="nav-item active header-column" ">
-                        <a class="nav-link " href="#">
-                            <form id='formDonate' name='form-Donate' onsubmit='redirect();return false;'>
-                                <div class="style7">
-                                    <input type="image" name="submit" src="../wwwroot/images/HTD_Donate_CTA.png" border="0" alt="Submit" style="width:150px;" />
-                                </div>
-                            </form>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!--GUTS OF THE THING END-->
-        </div> <!--END ROW-->
-    </nav><!--END NAV SECTION-->
+    </nav>
 
     <div class="header-container">WHO WE ARE</div>
 
@@ -126,10 +110,11 @@
         </div>
     </div>
 
-
+    <br /><br /><br />
     <h2 style="text-align:center">participating homestores</h2>
-    <center>(map will go here)</center>
-    <br style="padding:100px;" />
+    <center><img src="../wwwroot/images/fake-map.png" /></center>
+
+    <br /><br /><br />
 
     <h2 style="text-align:center">frequently asked questions</h2>
 
@@ -148,7 +133,7 @@
                 <div class="card-header" role="tab" id="headingOne1">
                     <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                        aria-controls="collapseOne1">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             Who can I contact for more information or additional questions?<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -157,7 +142,7 @@
                 <!-- Card body -->
                 <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         You may contact us via email at admin@ahopetodream.com
                     </div>
                 </div>
@@ -171,7 +156,7 @@
                 <div class="card-header" role="tab" id="headingTwo2">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                        aria-expanded="false" aria-controls="collapseTwo2">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             What are the qualifications? <i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -180,10 +165,10 @@
                 <!-- Card body -->
                 <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
                      data-parent="#accordionEx">
-                    <div class="card-body">
-                        Underprivileged children between the ages of 3 and 16 who do not have beds
-                        Families with very low income, lives in poverty or transitioning from homelessness
-                        Nominated by a school social worker, case manager, church, and other charitable organizations
+                    <div class="card-body faq-extension-body">
+                        <p>Underprivileged children between the ages of 3 and 16 who do not have beds</p>
+                        <p>Families with very low income, lives in poverty or transitioning from homelessness</p>
+                        <p>Nominated by a school social worker, case manager, church, and other charitable organizations</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +180,7 @@
                 <div class="card-header" role="tab" id="headingTwo3">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo3"
                        aria-expanded="false" aria-controls="collapseTwo3">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             What can I do to support this program? <i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -204,7 +189,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo3" class="collapse" role="tabpanel" aria-labelledby="headingTwo3"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-bod faq-extension-body">
                         Ashley HomeStores donates a portion of the mattress sales to Hope To Dream.
                         We encourage the community to engage with us thru thru social media. Follow us on Instagram and twitter and like us on Facebook!
                     </div>
@@ -217,7 +202,7 @@
                 <div class="card-header" role="tab" id="headingTwo4">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo4"
                        aria-expanded="false" aria-controls="collapseTwo4">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             Can I request the type of bed for my child(ren)? <i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -226,7 +211,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo4" class="collapse" role="tabpanel" aria-labelledby="headingTwo4"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         No. All Hope to Dream beds are a standard twin size mattress.
                     </div>
                 </div>
@@ -238,7 +223,7 @@
                 <div class="card-header" role="tab" id="headingTwo5">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo5"
                        aria-expanded="false" aria-controls="collapseTwo5">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             Can I submit a nomination for more than one child?<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -247,7 +232,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo5" class="collapse" role="tabpanel" aria-labelledby="headingTwo5"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         Yes. Feel free to submit a nomination for each child in need.
                     </div>
                 </div>
@@ -259,7 +244,7 @@
                 <div class="card-header" role="tab" id="headingTwo6">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo6"
                        aria-expanded="false" aria-controls="collapseTwo6">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             How do I know if my local Ashley HomeStore is participating?<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -268,7 +253,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo6" class="collapse" role="tabpanel" aria-labelledby="headingTwo6"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         XXXXXXXXX - reword???? A list of participating Ashley HomeStores can be found here.
                     </div>
                 </div>
@@ -280,7 +265,7 @@
                 <div class="card-header" role="tab" id="headingTwo7">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo7"
                        aria-expanded="false" aria-controls="collapseTwo7">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             How do I submit a nomination?<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -289,7 +274,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo7" class="collapse" role="tabpanel" aria-labelledby="headingTwo7"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         Nominations can be submitted online here or at any participating Ashley HomeStore.
                     </div>
                 </div>
@@ -302,7 +287,7 @@
                 <div class="card-header" role="tab" id="headingTwo8">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo8"
                        aria-expanded="false" aria-controls="collapseTwo8">
-                        <h5 class="mb-0">
+                        <h5 class="mb-0 faq-extension-header">
                             How will I know if my child is selected for a bed?<i class="fas fa-angle-down rotate-icon"></i>
                         </h5>
                     </a>
@@ -311,7 +296,7 @@
                 <!-- Card body -->
                 <div id="collapseTwo8" class="collapse" role="tabpanel" aria-labelledby="headingTwo8"
                      data-parent="#accordionEx">
-                    <div class="card-body">
+                    <div class="card-body faq-extension-body">
                         Families that are selected will be notified by phone
                         Due to the high volume of online nominations, only selected families will be notified by phone
                     </div>
@@ -320,6 +305,74 @@
             </div>
         </div>
     </div>
+
+
+    <br /><br /><br />
+
+
+    <!--  CONTACT US FORM   -->
+    <div class="container ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-5 ">
+                    <img src="../wwwroot/images/2-girls.jpg" class=" img-fluid" style="padding-top:20px;">
+                </div>
+                <div class="col-sm-7">
+                    <h2>contact us</h2>
+                    <p>For more information about Hope to Dream or to make a donation or nomination, please use the form below.</p>
+                    <form class="form-inline" action="/action_pagexxxxxxxxxxxx.php">
+                        <div class="row ">
+                            <div class="col-sm-4 form-field-extend  ">
+                                <input type="text" class="form-control" id="firstName" placeholder="First name">
+                            </div>
+                            <div class="col-sm-4 form-field-extend ">
+                                <input type="text" class="form-control" id="LastName" placeholder="Last name">
+                            </div>
+                            <div class="col-sm-4 form-field-extend ">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone #">
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-sm-4 form-field-extend  ">
+                                <input type="text" class="form-control" id="country" placeholder="Country">
+                            </div>
+                            <div class="col-sm-4 form-field-extend ">
+                                <input type="text" class="form-control" id="city" placeholder="City">
+                            </div>
+                            <div class="col-sm-4 form-field-extend ">
+                                <input type="text" class="form-control" id="state" placeholder="State">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-field-extend ">
+                                <input type="text" class="form-control " id="email" placeholder="Email">
+                                <p style="padding-top:20px;font-size:x-small">
+                                    <b>NOTE:</b> If you are checking on the status of the nominations submitted, please be advised that all nominations
+                                    are for review by a selection committee and the schedule varies per location. Set schedules are quarterly,
+                                    semi-annually and annually. Due to high volume of nominations we receive each week, only selected families
+                                    will be notofied by phone if a child qualifies for a bed. Thank you.<br />
+                                </p>
+                                <div>
+                                    <textarea class="form-control" rows="5" cols="80" id="comment" name="text" placeholder="Your message"></textarea>
+                                </div>
+                                <div>
+                                    <input type="image" src="../wwwroot/images/HTD_Submit_CTA.png" alt="Submit" style="padding-top:20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF CONTACT US FORM   -->
+
+
+
+    <br /><br />
+
 
 
 
