@@ -7,26 +7,43 @@
 	<style>
 
 
-        .colorClass {
-            background-color: var(--siteBlue);
+        .row-test {
+            display: flex;
+            flex-direction: row;
+            /*border-style: dotted;*/
         }
+
+		.col-test{
+			display:flex;
+			flex-direction:column;		
+			border-style:dashed;
+			border-color:red;
+		}
+
 
 	</style>
 </head>
 
 <body>
 
-	for testing stuff
-	<hr />
+	<div class="row-test">
 
-	a graphic used as a na input button
-
-	<form id='formName' name='form-Donate' onsubmit='redirect();return false;'>
-		<div class="style7">
-			<input type="image" name="submit" src="../wwwroot/images/HTD_Donate_CTA.png" border="0" alt="Submit" style="width:150px;" />
+		<div class="col-test">
+			STAR GOES HERE
 		</div>
-	<p class="colorClass" style="height:100px">TESTSSSSSSSSSSSSSS</p>
-	</form>
+		<div class="col-test">
+			<div class="col-test">
+				about a hope ......
+			</div>
+			<div class="col-test">
+				<p>text here text here text here text here text here text here </p>
+			</div>
+		</div>
+			<div class="col-test">
+				picture here
+			</div>
+
+		</div>
 
 
 </body>

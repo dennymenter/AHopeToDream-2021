@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="../wwwroot/css/main.css" rel="stylesheet">
+    <link href="../wwwroot/css/bootstrap/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <link href="../wwwroot/css/home-page.css" rel="stylesheet" type="text/css">
+    <link href="../wwwroot/css/Scratchystylesheet.css" rel="stylesheet">
+
+    <style>
+
+        .form-row {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            border-style: var(--varborderstyle);
+            border-color: var(--varbordercolor);
+        }
+
+        .form-col {
+            display: flex;
+            flex-direction: column;
+            border-style: var(--varborderstyle);
+            border-color: var(--varbordercolor);
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="form-row">
+        <div class="form-col"  style="width:40%";>
+            <img src="../wwwroot/images/2-girls.jpg" / style="padding:20px;">
+        </div>
+        <div class="form-col" style="width:40%";>
+            <div class="form-col" style="padding-top:20px">
+                <h2>contact us</h2>
+                For more information about Hope to Dream or to make a donation or nomination, please use the form below.
+            </div>
+            <form action="#">
+                <div class="form-row" style="justify-content:left;">
+                    <div class="form-col" style="padding-right:10px;">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name" style="padding:5px;">
+                    </div>
+                    <div class="form-col" style="padding-right:10px;">
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name" style="padding:5px;">
+                    </div>
+                    <div class="form-col">
+                        <input type="text" id="phone" name="phone" placeholder="Phone #" style="padding:5px;">
+                    </div>
+                </div>
+                <div class="form-row"  style="justify-content:left;">
+                    <div class="form-col" style="padding-right:10px;">
+                        <input type="text" id="Country" name="Country" placeholder="Country" style="padding:5px;">
+                    </div>
+                    <div class="form-col" style="padding-right:10px;">
+                        <input type="text" id="City" name="City" placeholder="City" style="padding:5px;">
+                    </div>
+                    <div class="form-col">
+                        <input type="text" id="State" name="State" placeholder="State" style="padding:5px;">
+                    </div>
+                </div>
+                <div class="form-row" style="justify-content:left;">
+                    <div class="form-col">
+                        <input type="text" id="email" name="email" placeholder="Email address" style="padding:5px;">
+                        <br />
+                        NOTE: If you are checking on the status of the nominations submitted, please be advised that all nominations
+                        are for review by a selection committee and the schedule varies per location. Set schedules are quarterly,
+                        semi-annually and annually. Due to high volume of nominations we receive each week, only selected families
+                        will be notofied by phone if a child qualifies for a bed. Thank you.
+                    </div>
+                        <br />
+                        <textarea id="subject" name="subject" placeholder="Your message" style="height:200px; width:600px"></textarea>
+                        <p><input type="checkbox" /> Subscribe to newsletter</p>
+                        SUBMIT BUTTON
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

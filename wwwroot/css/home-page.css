@@ -3,8 +3,8 @@
 .header-row {
     display: flex;
     flex-direction: row;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: var(--varborderstyle);
+    border-color: var(--varbordercolor);
     background-color: var(--siteBlue);
 }
 
@@ -16,15 +16,15 @@
     letter-spacing: .2em;
     padding-left: 10px;
     padding-right: 10px;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: var(--varborderstyle);
+    border-color: var(--varbordercolor);
 }
 
 .header-row-right-just {
     display: flex;
     flex-direction: row;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: var(--varborderstyle);
+    border-color: var(--varbordercolor);
     justify-content: flex-end;
     justify-items: center;
     width: 100%;
@@ -140,16 +140,16 @@
 .sleep-container-column {
     display: flex;
     flex-direction: column;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: var(--varborderstyle);
+    border-color: var(--varbordercolor);
 }
 
 .sleep-column {
     display: flex;
     flex-direction: column;
     padding: 25px;
-    border-style: var(--varBorderStyle);
-    border-color: var(--varBorderColor);
+    border-style: var(--varborderstyle);
+    border-color: var(--varbordercolor);
     text-align: center;
 }
 

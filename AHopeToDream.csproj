@@ -32,6 +32,7 @@
     <None Include="wwwroot\images\HTD_Website_Home-1_DK.jpg" />
     <None Include="wwwroot\images\HTD_Website_Home-1_MB.jpg" />
     <None Include="wwwroot\images\HTD_Website_Home-2_MB.jpg" />
+    <None Include="wwwroot\images\HTD__WhoWeAre_header.jpg" />
     <None Include="wwwroot\images\social.gif" />
   </ItemGroup>
 
